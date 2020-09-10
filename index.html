@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="controller">
+    <h1>Welcome to the DevOps Calculator</h1>
+    <input type="number" ng-model="num1" prompt="First number">    
+    <input type="number" ng-model="num2" prompt="Second number">
+    <button id='addButton' ng-click="add()">Add</button>
+    <p ng-show="answer != undefined">
+        {{answer}}
+    </p>
+</body>
+</html>
